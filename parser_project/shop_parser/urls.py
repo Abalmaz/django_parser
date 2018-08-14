@@ -3,5 +3,5 @@ from .views import index, results
 
 urlpatterns = [
     path('', index),
-    path('parser_results', results.as_view(), name='parser_results'),
+    path('parser_results', results, name='parser_results'),
 ]
