@@ -1,0 +1,10 @@
+{% extends 'shop_parser/base.html' %}
+
+{% block body %}
+     <div class="container">
+         <form action="" method="post">
+             {% csrf_token %}
+             <button class="btn btn-success btn-lg" type="submit">Pars Valentino shop</button>
+         </form>
+     </div>
+{% endblock %}

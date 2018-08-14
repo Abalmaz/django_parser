@@ -1,0 +1,35 @@
+{% extends 'shop_parser/base.html' %}
+
+{% block body %}
+    <div class="container">
+        <table class="table">
+            <thead class="thead-inverse">
+                <tr>
+                    <th>Brand</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Color</th>
+                    <th>Size</th>
+                    <th>Currency</th>
+                    <th>Price</th>
+                    <th>Images</th>
+                </tr>
+            </thead>
+            </tbody>
+            {% for item in items %}
+                <tr>
+                    <td>{{ item.brand }}</td>
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.description }}</td>
+                    <td>{{ item.color }}</td>
+                    <td>{{ item.size }}</td>
+                    <td>{{ item.currency }}</td>
+                    <td>{{ item.price }}</td>
+                    <td>{{ item.image }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}
