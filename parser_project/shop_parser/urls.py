@@ -1,6 +1,7 @@
 from django.urls import path
-from shop_parser import views
+from .views import index, results
 
 urlpatterns = [
-    
+    path('', index),
+    path('parser_results', results.as_view(), name='parser_results'),
 ]
