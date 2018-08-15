@@ -13,6 +13,7 @@ def index(request):
     if request.method == 'POST':
         redis_server.lpush('valentino:start_urls', 'https://www.valentino.com/en-us/women/pret-a-porter')
         return redirect('parser_results')
+    return render(request, 'shop_parser/index.html')
 
 
 def results(ListView):

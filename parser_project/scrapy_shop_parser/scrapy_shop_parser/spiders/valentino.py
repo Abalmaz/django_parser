@@ -9,9 +9,9 @@ class ShopSpider(RedisSpider):
                   , 'https://www.valentino.com/en-us/men/apparel'
                   ]
 
-    def make_requests_from_url(self, url):
-        return scrapy.Request(url, headers='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) '
-                                           'Chrome/67.0.3396.99 Safari/537.36',  dont_filter=True)
+    # def make_requests_from_url(self, url):
+    #     return scrapy.Request(url, headers='Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) '
+    #                                        'Chrome/67.0.3396.99 Safari/537.36',  dont_filter=True)
 
     # def start_requests(self):
     #
